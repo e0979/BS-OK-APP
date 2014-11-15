@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.87" />
+
+    <com.viewpagerindicator.UnderlinePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout-->
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+        <!-- Footer Start -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFCC00"
+            android:paddingTop="5.0dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <!--"90dip"-->
+
+        <!--/LinearLayout-->
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/signin"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="@string/login"
+            android:layout_weight="1.0"
+          />
+
+    </LinearLayout>
+        <!-- Footer Ends -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/footer">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.87" />
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp" />
+        </LinearLayout>
+</RelativeLayout>
